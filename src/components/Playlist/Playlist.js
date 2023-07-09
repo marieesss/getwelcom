@@ -37,12 +37,12 @@ const Playlist = () => {
         <>
           <div class="container-flexbox">
             <div class="shadow-violet">
-              <img src={playlist.images[0].url} class="img-playlist" />
+              <img src={playlist.images[0].url} class="img-playlist" alt={playlist.name}/>
             </div>
             <h1 class="text-center playlist-title">{playlist.name}</h1>
             <button class="spotify-following-button">Following</button>
-            <p class="mt-3 playlist-artist-name">Artist Name - {playlist.followers.total} followers</p>
-            <button class="spotify-shuffle">Shuffle Play</button>
+            <p class="m-1 playlist-artist-name">Artist Name - {playlist.followers.total} followers</p>
+            <button class="m-2 spotify-shuffle">Shuffle Play</button>
           </div>
           <div class="row justify-content-center">
             <div class="col-10">
