@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Gotham-Black';
+  src: url('../public/font/Gotham-Black.otf') format('opentype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('../public/font/GothamMedium.ttf') format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: #191414;
+  color: white;
+  font-family: "Gotham-Medium";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p{
+  color:white;
+}
+
+.background{
+  background-color: #191414;
+}
+
+h1{
+  font-family: "Gotham-Black";
+  font-size: 24px;
+}
+
+h2{
+  font-family: 'Gotham-Medium';
+  font-size:16px;
+  color: white
+}
+
+a:visited{
+  text-decoration: none;
+}
+
+a:link{
+  text-decoration: none;
+}
+.result{
+  margin-top: 150px;
+}
+
+.li-playlist{
+  margin-bottom: 7px;
+  border-radius: 30px;
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 5px 5px 0px;
+}
+
+.img-playlist{
+  width: 200px;
+  height:200px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.shadow-violet{
+  box-shadow:  rgba(147, 133, 147, 1) 1px 100px 100px 100px;
+  width:200px;
+  margin-bottom: 25px;
+}
+
+.container-flexbox{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.spotify-following-button{
+  background-color: transparent;
+  border-color: #1DB954;
+  border-width: 2px;
+  border-radius: 30px;
+  color:white;
+  box-shadow:none;
+  padding: 0px 20px 0px 20px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.item-music{
+  height: 40px;
+  line-height: 10px;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+}
+
+.artist-name{
+  color: #b4b0ac;
+  font-size: 12px;
+  
+}
+
+.spotify-shuffle{
+  background-color:#1DB954;
+  padding: 10px 70px 10px 70px;
+  border-radius: 30px;
+  border: none;
+  color:white
+}
+
+.playlist-title{
+  margin-bottom: 50px;
+}
+
+.playlist-artist-name{
+  color:#b4b0ac
+
+}
+
+@media (max-width: 667px) {
+  /* Styles spécifiques pour les écrans de 576px ou moins */
+  .img-playlist {
+    width: 100px;
+    height: 100px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .shadow-violet{
+    box-shadow:  rgba(147, 133, 147, 1) 1px 100px 100px 100px;
+    width:100px;
+    margin-bottom: 25px;
   }
+  
+  h1 {
+    font-size: 13px;
+  }
+
+  h2{
+    font-size:11px
+  }
+
+  p{
+    font-size: 10px;
+  }
+  
+  .artist-name {
+    font-size: 8px;
+  }
+
+  .playlist-title{
+    margin-bottom: 25px;
+  }
+
+  button{
+    font-size: 11px
+  }
+
 }
