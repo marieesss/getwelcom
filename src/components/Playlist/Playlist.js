@@ -32,16 +32,22 @@ const Playlist = () => {
   }, [location.state]);
 
   return (
-    <div class="m-5">
+    <section class="m-5">
       {playlist ? (
         <>
           <div class="container-flexbox">
             <div class="shadow-violet">
-              <img src={playlist.images[0].url} class="img-playlist" alt={playlist.name}/>
+              <img
+                src={playlist.images[0].url}
+                class="img-playlist"
+                alt={playlist.name}
+              />
             </div>
             <h1 class="text-center playlist-title">{playlist.name}</h1>
             <button class="spotify-following-button">Following</button>
-            <p class="m-1 playlist-artist-name">Artist Name - {playlist.followers.total} followers</p>
+            <p class="m-1 playlist-artist-name">
+              Artist Name - {playlist.followers.total} followers
+            </p>
             <button class="m-2 spotify-shuffle">Shuffle Play</button>
           </div>
           <div class="row justify-content-center">
@@ -58,7 +64,7 @@ const Playlist = () => {
                 </div>
               </div>
               <ul class="list-group">
-                {playlist.tracks.items.map((music) => (
+                {playlist.tracks.items.map(music => (
                   <RowSongs music={music.track} />
                 ))}
               </ul>
@@ -66,7 +72,7 @@ const Playlist = () => {
           </div>
         </>
       ) : null}
-    </div>
+    </section>
   );
 };
 

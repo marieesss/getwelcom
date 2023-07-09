@@ -12,6 +12,10 @@ body{
   background-color: #191414;
   color: white;
   font-family: "Gotham-Medium";
+  min-height: 100vh; 
+  margin:0; 
+  display:flex; 
+  flex-direction:column;
 }
 
 p{
@@ -40,6 +44,18 @@ a:visited{
 a:link{
   text-decoration: none;
 }
+footer {
+  min-height:10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  min-height: 90vh
+}
+
 .result{
   margin-top: 150px;
 }
