@@ -76,7 +76,7 @@ a:link{
   border-radius: 30px;
   color:white;
   box-shadow:none;
-  padding: 0px 20px 0px 20px
+  padding: 2px 20px 2px 20px
 }
 
 .item-music{
@@ -100,7 +100,8 @@ a:link{
   padding: 10px 70px 10px 70px;
   border-radius: 30px;
   border: none;
-  color:white
+  color:white;
+  margin-bottom:15px
 }
 
 .playlist-title{
@@ -115,13 +116,13 @@ a:link{
 @media (max-width: 667px) {
   /* Styles spécifiques pour les écrans de 576px ou moins */
   .img-playlist {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 
   .shadow-violet{
     box-shadow:  rgba(147, 133, 147, 1) 1px 100px 100px 100px;
-    width:100px;
+    width:150px;
     margin-bottom: 25px;
   }
   
