@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Playlist from './components/Playlist/Playlist';
+import Footer from './components/Layout/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="*" element={<Home />} />
         <Route path="/playlist" element={<Playlist />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

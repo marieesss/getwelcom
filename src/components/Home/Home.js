@@ -7,7 +7,7 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   return (
-    <div class="overflow-hidden">
+    <section class="overflow-hidden">
       <Menu />
       <div class="row justify-content-center">
         <div class="col-10">
@@ -30,7 +30,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
